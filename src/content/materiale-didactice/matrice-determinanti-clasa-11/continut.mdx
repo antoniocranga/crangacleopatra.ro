@@ -1,0 +1,41 @@
+## Ce este o matrice?
+
+O matrice este un tablou dreptunghiular de numere (reale sau complexe).
+
+$$
+A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}
+$$
+
+## Determinantul de ordin 2
+
+Pentru o matrice pătratică de ordinul 2, determinantul se calculează prin produsul elementelor de pe diagonala principală minus produsul elementelor de pe diagonala secundară.
+
+$$
+\det(A) = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = a \cdot d - b \cdot c
+$$
+
+<Rezolvare>
+  **Exemplu:**
+  Dacă $A = \begin{pmatrix} 2 & 5 \\ 1 & 3 \end{pmatrix}$,
+  atunci $\det(A) = 2 \cdot 3 - 5 \cdot 1 = 6 - 5 = 1$.
+</Rezolvare>
+
+---
+
+<GrilaTest titlu="Test: Determinanți" descriere="Exercițiu.">
+  <Intrebare id="q1" tip="input" raspunsCorect="-2">
+    Calculează determinantul matricei $\begin{pmatrix} 1 & 2 \\ 2 & 2 \end{pmatrix}$.
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="0" explicatie="3*4 - 6*2 = 12 - 12 = 0">
+    Calculează determinantul matricei $\begin{pmatrix} 3 & 6 \\ 2 & 4 \end{pmatrix}$.
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="1" optiuni={[{eticheta: "0", valoare: "0"}, {eticheta: "1", valoare: "1"}]}>
+    Care este determinantul matricei unitate $I_2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$?
+  </Intrebare>
+  <Intrebare id="q4" tip="grila" raspunsCorect="Numere în tablou" optiuni={[{eticheta: "Numere în tablou", valoare: "Numere în tablou"}, {eticheta: "Doar numere complexe", valoare: "Doar numere complexe"}]}>
+    Ce este o matrice?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="10" explicatie="5*2 - 0 = 10">
+    Calculează determinantul pentru $\begin{pmatrix} 5 & 0 \\ 0 & 2 \end{pmatrix}$.
+  </Intrebare>
+</GrilaTest>

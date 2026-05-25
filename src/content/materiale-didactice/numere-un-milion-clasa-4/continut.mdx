@@ -1,0 +1,32 @@
+## Clase și ordine
+
+Pentru a citi cu ușurință numerele mari, le grupăm în **clase**, de la dreapta la stânga, câte 3 cifre.
+Fiecare clasă are 3 ordine: unități, zeci, sute.
+1. Clasa unităților
+2. Clasa miilor
+
+Exemplu: Numărul **345 678** se citește "trei sute patruzeci și cinci de mii șase sute șaptezeci și opt".
+
+<Atenție titlu="Ordonarea">
+  Când comparăm două numere naturale, ne uităm mai întâi la numărul de cifre. Numărul cu mai multe cifre este mereu mai mare!
+</Atenție>
+
+---
+
+<GrilaTest titlu="Test" descriere="Scrierea numerelor.">
+  <Intrebare id="q1" tip="input" raspunsCorect="405002">
+    Scrie cu cifre: patru sute cinci mii doi.
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="1000000">
+    Cum se scrie cu cifre numărul un milion? (scrie numărul legat)
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="99999" optiuni={[{eticheta: "99999", valoare: "99999"}, {eticheta: "100000", valoare: "100000"}]}>
+    Care este cel mai mare număr de 5 cifre?
+  </Intrebare>
+  <Intrebare id="q4" tip="grila" raspunsCorect="100000" optiuni={[{eticheta: "100000", valoare: "100000"}, {eticheta: "99999", valoare: "99999"}]}>
+    Care este cel mai mic număr de 6 cifre?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="6" explicatie="Un milion se scrie 1 000 000.">
+    Câte zerouri are numărul un milion?
+  </Intrebare>
+</GrilaTest>

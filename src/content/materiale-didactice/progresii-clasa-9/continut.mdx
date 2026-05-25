@@ -1,0 +1,45 @@
+## Progresia Aritmetică
+
+Un șir de numere $(a_n)$ în care fiecare termen, începând cu al doilea, se obține din cel precedent prin adunarea unui număr constant $r$ (numit **rație**).
+$$
+a_n = a_1 + (n - 1)r
+$$
+
+Suma primilor $n$ termeni este:
+$$
+S_n = \frac{(a_1 + a_n) \cdot n}{2}
+$$
+
+## Progresia Geometrică
+
+Un șir $(b_n)$ în care raportul a oricăror doi termeni consecutivi este constant, numit $q$ (rație).
+$$
+b_n = b_1 \cdot q^{n-1}
+$$
+
+<Rezolvare>
+  **Exemplu:**
+  Fie șirul $2, 4, 6, 8, \dots$
+  Acesta este o progresie aritmetică cu $a_1 = 2$ și $r = 2$.
+  Al $10$-lea termen este: $a_{10} = 2 + 9 \cdot 2 = 20$.
+</Rezolvare>
+
+---
+
+<GrilaTest titlu="Test: Progresii" descriere="Verifică-ți cunoștințele.">
+  <Intrebare id="q1" tip="input" raspunsCorect="10">
+    Care este al 5-lea termen al progresiei aritmetice $2, 4, 6, \dots$ ?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="16" explicatie="2 * 2^3 = 2 * 8 = 16">
+    Dacă într-o progresie geometrică primul termen este 2 și rația este 2, care este al patrulea termen?
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="Rație" optiuni={[{eticheta: "Factor", valoare: "Factor"}, {eticheta: "Rație", valoare: "Rație"}]}>
+    Cum se numește constanta $r$ dintr-o progresie aritmetică?
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="55">
+    Cât este suma primilor 10 termeni din progresia $1, 2, 3, 4, \dots$ ? (suma lui Gauss)
+  </Intrebare>
+  <Intrebare id="q5" tip="grila" raspunsCorect="Aritmetică" optiuni={[{eticheta: "Aritmetică", valoare: "Aritmetică"}, {eticheta: "Geometrică", valoare: "Geometrică"}]}>
+    Șirul $5, 10, 15, 20$ este o progresie...
+  </Intrebare>
+</GrilaTest>

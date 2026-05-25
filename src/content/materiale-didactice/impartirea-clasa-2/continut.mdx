@@ -1,0 +1,32 @@
+## Ce este împărțirea?
+
+Împărțirea ne arată de câte ori se cuprinde un număr în altul. Este operația inversă înmulțirii.
+
+Dacă avem 12 bomboane și le împărțim în mod egal la 3 copii, fiecare copil va primi 4 bomboane.
+$$
+12 : 3 = 4
+$$
+
+<Atenție titlu="Regula de aur">
+  Nu putem împărți niciodată la zero! Zero împărțit la orice număr este zero.
+</Atenție>
+
+---
+
+<GrilaTest titlu="Test: Împărțirea" descriere="Calculează.">
+  <Intrebare id="q1" tip="input" raspunsCorect="5">
+    Cât face 25 împărțit la 5?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="7">
+    Cât face $42 : 6$ ?
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="Câtul" optiuni={[{eticheta: "Câtul", valoare: "Câtul"}, {eticheta: "Restul", valoare: "Restul"}]}>
+    Cum se numește rezultatul împărțirii?
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="0" explicatie="0 împărțit la orice număr este 0.">
+    Cât face $0 : 8$ ?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="9">
+    Cât face $81 : 9$ ?
+  </Intrebare>
+</GrilaTest>

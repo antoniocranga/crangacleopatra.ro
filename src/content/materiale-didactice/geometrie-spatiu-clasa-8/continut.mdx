@@ -1,0 +1,33 @@
+## Prisma și Piramida
+
+### Prisma dreaptă
+- **Aria laterală ($A_l$):** $P_b \cdot h$
+- **Volum ($V$):** $A_b \cdot h$
+
+### Piramida regulată
+- **Aria laterală ($A_l$):** $\frac{P_b \cdot a_p}{2}$, unde $a_p$ este apotema piramidei.
+- **Volum ($V$):** $\frac{A_b \cdot h}{3}$
+
+<Atenție titlu="Important">
+  Nu confunda muchia laterală cu apotema piramidei! Apotema este înălțimea unei fețe laterale.
+</Atenție>
+
+---
+
+<GrilaTest titlu="Test: Volum" descriere="Aplică formula.">
+  <Intrebare id="q1" tip="input" raspunsCorect="125">
+    Care este volumul unui cub cu muchia $l = 5$ ? ($V = l^3$)
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="6" explicatie="Aria este latura la pătrat = 36. Latură este 6.">
+    Dacă aria bazei unei prisme patrulatere regulate este 36, cât este latura bazei?
+  </Intrebare>
+  <Intrebare id="q3" tip="input" raspunsCorect="360" explicatie="V = 36 * 10 = 360">
+    Cu datele din întrebarea 2, dacă înălțimea $h=10$, care e volumul prismei?
+  </Intrebare>
+  <Intrebare id="q4" tip="grila" raspunsCorect="Înălțimea feței laterale" optiuni={[{eticheta: "Înălțimea piramidei", valoare: "Înălțimea piramidei"}, {eticheta: "Înălțimea feței laterale", valoare: "Înălțimea feței laterale"}]}>
+    Ce este apotema piramidei?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="10">
+    Dacă volumul unei piramide este 30, iar aria bazei este 9, cât este înălțimea? (Folosește formula V = (A*h)/3)
+  </Intrebare>
+</GrilaTest>

@@ -1,0 +1,36 @@
+## Recapitularea Operațiilor
+
+Ordinea efectuării operațiilor în matematică este esențială.
+- Operațiile de **ordinul III**: ridicarea la putere
+- Operațiile de **ordinul II**: înmulțirea și împărțirea
+- Operațiile de **ordinul I**: adunarea și scăderea
+
+Dacă avem paranteze, se rezolvă mai întâi parantezele rotunde $()$, apoi cele pătrate $[]$, iar la final acoladele $\{\}$.
+
+<Rezolvare>
+  **Calcul:**
+  $10 + [ 5 \times (2 + 3) ]$
+  1. Paranteza rotundă: $2 + 3 = 5$
+  2. Paranteza pătrată: $5 \times 5 = 25$
+  3. Adunarea finală: $10 + 25 = 35$
+</Rezolvare>
+
+---
+
+<GrilaTest titlu="Test: Ordinea operațiilor" descriere="Verifică ce ai reținut.">
+  <Intrebare id="q1" tip="input" raspunsCorect="14">
+    Cât este $2 + 3 \times 4$ ?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="4">
+    Cât este $(10 - 2) : 2$ ?
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="Ridicarea la putere" optiuni={[{eticheta: "Înmulțirea", valoare: "Înmulțirea"}, {eticheta: "Ridicarea la putere", valoare: "Ridicarea la putere"}]}>
+    Care este operația de ordinul III?
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="5" explicatie="[15 - 5] : 2 = 10 : 2 = 5">
+    Cât face $[15 - (2+3)] : 2$ ?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="31">
+    Cât face $1 + 2 \times 3 \times 5$ ?
+  </Intrebare>
+</GrilaTest>

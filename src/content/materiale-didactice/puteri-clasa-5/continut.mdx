@@ -1,0 +1,39 @@
+## Ce este o putere?
+
+Ridicarea la putere este o înmulțire repetată a aceluiași număr.
+
+$$
+a^n = \underbrace{a \cdot a \cdot a \dots a}_{n \text{ ori}}
+$$
+Unde $a$ este **baza**, iar $n$ este **exponentul**.
+
+<Atenție titlu="Reguli importante">
+  1. Orice număr la puterea 0 este 1: $a^0 = 1$ (dacă $a \neq 0$)
+  2. Orice număr la puterea 1 este el însuși: $a^1 = a$
+</Atenție>
+
+<Rezolvare>
+  **Exemple:**
+  - $2^3 = 2 \times 2 \times 2 = 8$
+  - $5^2 = 5 \times 5 = 25$
+</Rezolvare>
+
+---
+
+<GrilaTest titlu="Test: Puteri" descriere="Exersează ridicarea la putere.">
+  <Intrebare id="q1" tip="input" raspunsCorect="100">
+    Cât face $10^2$ ?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="1" explicatie="Orice număr nenul la puterea 0 este 1.">
+    Cât face $5^0$ ?
+  </Intrebare>
+  <Intrebare id="q3" tip="input" raspunsCorect="81" explicatie="3 * 3 * 3 * 3 = 81">
+    Cât face $3^4$ ?
+  </Intrebare>
+  <Intrebare id="q4" tip="grila" raspunsCorect="Baza" optiuni={[{eticheta: "Baza", valoare: "Baza"}, {eticheta: "Exponentul", valoare: "Exponentul"}]}>
+    În scrierea $a^n$, cum se numește $a$?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="0" explicatie="0 înmulțit de 5 ori tot 0 este.">
+    Cât face $0^5$ ?
+  </Intrebare>
+</GrilaTest>

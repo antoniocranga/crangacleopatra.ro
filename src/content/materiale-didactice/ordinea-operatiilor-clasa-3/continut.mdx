@@ -1,0 +1,33 @@
+## Reguli de calcul
+
+Când avem un exercițiu cu mai multe operații, respectăm următoarea ordine:
+1. Mai întâi efectuăm operațiile din **paranteze** (dacă există).
+2. Apoi efectuăm **înmulțirile și împărțirile**, în ordinea în care sunt scrise (de la stânga la dreapta).
+3. La final efectuăm **adunările și scăderile**, tot în ordinea în care sunt scrise.
+
+<Rezolvare>
+  **Exemplu:**
+  $10 + 2 \times 5 = ?$
+  - Greșit: $(10+2) \times 5 = 60$
+  - Corect: $10 + 10 = 20$ (facem întâi înmulțirea)
+</Rezolvare>
+
+---
+
+<GrilaTest titlu="Test" descriere="Rezolvă exercițiul.">
+  <Intrebare id="q1" tip="input" raspunsCorect="14">
+    Cât este $2 + 3 \times 4$ ?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="20" explicatie="(2+3) face 5, iar 5*4 face 20.">
+    Cât este $(2 + 3) \times 4$ ?
+  </Intrebare>
+  <Intrebare id="q3" tip="input" raspunsCorect="10" explicatie="Facem întâi 10 : 2 = 5, apoi 5 + 5 = 10.">
+    Cât face $5 + 10 : 2$ ?
+  </Intrebare>
+  <Intrebare id="q4" tip="grila" raspunsCorect="Înmulțirea și împărțirea" optiuni={[{eticheta: "Adunarea și scăderea", valoare: "Adunarea și scăderea"}, {eticheta: "Înmulțirea și împărțirea", valoare: "Înmulțirea și împărțirea"}]}>
+    Care operații se fac primele dacă nu avem paranteze?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="5" explicatie="20 - 15 = 5">
+    Cât face $20 - 3 \times 5$ ?
+  </Intrebare>
+</GrilaTest>

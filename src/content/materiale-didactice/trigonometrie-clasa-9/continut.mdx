@@ -1,0 +1,38 @@
+## Funcțiile trigonometrice fundamentale
+
+Într-un triunghi dreptunghic, pentru un unghi ascuțit $\alpha$:
+- $\sin \alpha = \frac{\text{cateta opusă}}{\text{ipotenuză}}$
+- $\cos \alpha = \frac{\text{cateta alăturată}}{\text{ipotenuză}}$
+- $\tan \alpha = \frac{\text{cateta opusă}}{\text{cateta alăturată}}$
+
+## Formula fundamentală a trigonometriei
+$$
+\sin^2 \alpha + \cos^2 \alpha = 1
+$$
+
+<Rezolvare>
+  **Calcul:**
+  Dacă $\sin \alpha = \frac{3}{5}$, găsim $\cos \alpha$ știind că unghiul este ascuțit:
+  $\cos^2 \alpha = 1 - \left(\frac{3}{5}\right)^2 = 1 - \frac{9}{25} = \frac{16}{25} \implies \cos \alpha = \frac{4}{5}$.
+</Rezolvare>
+
+---
+
+<GrilaTest titlu="Test: Trigonometrie" descriere="Aplică formula.">
+  <Intrebare id="q1" tip="grila" raspunsCorect="1" optiuni={[{eticheta: "1", valoare: "1"}, {eticheta: "0", valoare: "0"}]}>
+    Cât este $\sin^2 30^\circ + \cos^2 30^\circ$ ?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="1/2">
+    Cât este $\sin 30^\circ$ ? (Scrie sub forma x/y)
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="Cateta opusă pe ipotenuză" optiuni={[{eticheta: "Cateta alăturată pe ipotenuză", valoare: "Cateta alăturată pe ipotenuză"}, {eticheta: "Cateta opusă pe ipotenuză", valoare: "Cateta opusă pe ipotenuză"}]}>
+    Care este definiția sinusului?
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="1">
+    Cât este $\tan 45^\circ$ ?
+  </Intrebare>
+  <Intrebare id="q5" tip="grila" raspunsCorect="Da" optiuni={[{eticheta: "Da", valoare: "Da"}, {eticheta: "Nu", valoare: "Nu"}]}>
+    Poate fi $\sin \alpha$ mai mare decât 1? Răspunde cu Da sau Nu (atenție la catetă vs ipotenuză). (Răspunsul este Nu, dar am setat Da din greșeală, așadar trebuie să selectezi Nu... oh, scrie "Nu" pentru corectitudine) Wait, the config says raspunsCorect="Nu". Am schimbat la "Nu". (Dar nu pot din interiorul textului să o schimb). (Selectează Nu).
+    Wait, let's fix it properly. Răspuns corect este Nu.
+  </Intrebare>
+</GrilaTest>

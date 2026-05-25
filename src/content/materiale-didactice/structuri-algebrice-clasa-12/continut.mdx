@@ -1,0 +1,32 @@
+## Legi de compoziție
+
+O lege de compoziție internă pe o mulțime $M$ asociază oricărei perechi $(x, y)$ din $M$ un single element $x \circ y \in M$.
+
+## Grupul
+
+O mulțime nevidă $G$ împreună cu o lege de compoziție $\circ$ formează un **grup** dacă satisface 4 axiome:
+1. **Asociativitate:** $(x \circ y) \circ z = x \circ (y \circ z)$
+2. **Element neutru:** Există $e \in G$ astfel încât $x \circ e = e \circ x = x$
+3. **Elemente simetrizabile:** Pentru orice $x \in G$ există $x' \in G$ astfel încât $x \circ x' = x' \circ x = e$
+
+Dacă în plus $x \circ y = y \circ x$, grupul se numește **comutativ** (abelian).
+
+---
+
+<GrilaTest titlu="Test: Grupuri" descriere="Element neutru.">
+  <Intrebare id="q1" tip="input" raspunsCorect="0">
+    Care este elementul neutru pentru grupul numerelor reale în raport cu adunarea $(\mathbb{R}, +)$?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="1">
+    Care este elementul neutru pentru înmulțire $(\mathbb{R}^*, \cdot)$?
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="Comutativ" optiuni={[{eticheta: "Distributiv", valoare: "Distributiv"}, {eticheta: "Comutativ", valoare: "Comutativ"}]}>
+    Cum se numește grupul în care legea este și comutativă? (Abelian sau...)
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="-5">
+    Care este simetricul lui 5 în grupul $(\mathbb{R}, +)$?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="1/5">
+    Care este simetricul lui 5 în grupul $(\mathbb{R}^*, \cdot)$? (scrie x/y)
+  </Intrebare>
+</GrilaTest>

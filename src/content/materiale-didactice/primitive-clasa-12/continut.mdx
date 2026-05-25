@@ -1,0 +1,39 @@
+## Ce este o primitivă?
+
+Funcția $F(x)$ se numește primitivă a funcției $f(x)$ dacă:
+$$
+F'(x) = f(x)
+$$
+Mulțimea tuturor primitivelor se numește integrala nedefinită și se notează:
+$$
+\int f(x) dx = F(x) + C
+$$
+
+## Formule uzuale
+- $\int x^n dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)$
+- $\int \frac{1}{x} dx = \ln|x| + C$
+
+<Rezolvare>
+  **Exemplu:**
+  $\int 2x \, dx = x^2 + C$.
+</Rezolvare>
+
+---
+
+<GrilaTest titlu="Test: Primitive" descriere="Calculează.">
+  <Intrebare id="q1" tip="input" raspunsCorect="x^3+C">
+    O primitivă generală a lui $f(x) = 3x^2$ este de forma ... (scrie x^3+C)
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="x^2+C">
+    O primitivă generală a lui $f(x) = 2x$ este de forma ... (scrie x^2+C)
+  </Intrebare>
+  <Intrebare id="q3" tip="input" raspunsCorect="sin x + C">
+    O primitivă a lui $\cos x$ este... (scrie sin x + C)
+  </Intrebare>
+  <Intrebare id="q4" tip="grila" raspunsCorect="Constanta de integrare" optiuni={[{eticheta: "O funcție nouă", valoare: "O funcție nouă"}, {eticheta: "Constanta de integrare", valoare: "Constanta de integrare"}]}>
+    Ce reprezintă litera $C$ în formula primitivelor?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="e^x + C">
+    O primitivă generală a lui $e^x$ este...
+  </Intrebare>
+</GrilaTest>

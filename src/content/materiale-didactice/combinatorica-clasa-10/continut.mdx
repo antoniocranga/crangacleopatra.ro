@@ -1,0 +1,36 @@
+## Permutări
+
+Numărul de moduri în care putem ordona o mulțime de $n$ elemente se notează cu $P_n$ și se calculează astfel:
+$$
+P_n = n! = 1 \cdot 2 \cdot 3 \dots n
+$$
+
+## Aranjamente și Combinări
+- **Aranjamente ($A_n^k$):** Moduri de a alege $k$ elemente ORDONATE din $n$.
+$$
+A_n^k = \frac{n!}{(n-k)!}
+$$
+- **Combinări ($C_n^k$):** Moduri de a alege $k$ elemente NEORDONATE (submulțimi) din $n$.
+$$
+C_n^k = \frac{n!}{k!(n-k)!}
+$$
+
+---
+
+<GrilaTest titlu="Test: Combinatorică" descriere="Calcul.">
+  <Intrebare id="q1" tip="input" raspunsCorect="6">
+    Cât este $3!$ (factorial de 3)?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="24">
+    Cât este $4!$ ?
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="Combinări" optiuni={[{eticheta: "Aranjamente", valoare: "Aranjamente"}, {eticheta: "Combinări", valoare: "Combinări"}]}>
+    Care se folosește când ordinea NU contează?
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="10" explicatie="5! / (3! * 2!) = (5*4)/2 = 10">
+    Cât este $C_5^2$ ?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="20" explicatie="5! / 3! = 5*4 = 20">
+    Cât este $A_5^2$ ?
+  </Intrebare>
+</GrilaTest>

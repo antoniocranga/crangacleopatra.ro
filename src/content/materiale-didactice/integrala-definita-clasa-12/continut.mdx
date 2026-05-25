@@ -1,0 +1,34 @@
+## Formula fundamentală a calculului integral
+
+Dacă $F$ este o primitivă a funcției continue $f$ pe intervalul $[a, b]$, atunci integrala definită se calculează astfel:
+
+$$
+\int_a^b f(x) dx = F(b) - F(a)
+$$
+
+Acest rezultat este esențial pentru calculul ariilor sub curbele funcțiilor.
+
+<Rezolvare>
+  **Calcul integral:**
+  $\int_0^1 x^2 \, dx = \left. \frac{x^3}{3} \right|_0^1 = \frac{1^3}{3} - \frac{0^3}{3} = \frac{1}{3}$.
+</Rezolvare>
+
+---
+
+<GrilaTest titlu="Test: Integrale" descriere="Aplică formula.">
+  <Intrebare id="q1" tip="input" raspunsCorect="1">
+    Cât este $\int_0^1 2x \, dx$ ?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="4">
+    Cât este $\int_0^2 2x \, dx$ ?
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="Leibniz-Newton" optiuni={[{eticheta: "Pitagora", valoare: "Pitagora"}, {eticheta: "Leibniz-Newton", valoare: "Leibniz-Newton"}]}>
+    Cum se numește formula fundamentală a calculului integral?
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="0" explicatie="Integrala de la a la a dintr-o funcție este mereu 0.">
+    Cât este $\int_1^1 x^2 \, dx$ ?
+  </Intrebare>
+  <Intrebare id="q5" tip="grila" raspunsCorect="Aria sub curbă" optiuni={[{eticheta: "Panta tangentei", valoare: "Panta tangentei"}, {eticheta: "Aria sub curbă", valoare: "Aria sub curbă"}]}>
+    Geometric vorbind, ce reprezintă integrala definită a unei funcții pozitive?
+  </Intrebare>
+</GrilaTest>

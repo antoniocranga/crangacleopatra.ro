@@ -1,0 +1,38 @@
+## Conceptul de limită
+
+Limita unei funcții $f(x)$ când $x$ tinde spre $a$ descrie comportamentul funcției în vecinătatea punctului $a$.
+
+$$
+\lim_{x \to a} f(x) = L
+$$
+
+## Limite remarcabile
+
+O limită trigonometrică foarte importantă, pentru $x$ în radiani, este:
+$$
+\lim_{x \to 0} \frac{\sin x}{x} = 1
+$$
+
+<Atenție titlu="Atenție la limitele exponențiale">
+  Nu uitați de numărul $e$: $\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e$.
+</Atenție>
+
+---
+
+<GrilaTest titlu="Test: Limite" descriere="Caz simplu.">
+  <Intrebare id="q1" tip="input" raspunsCorect="5">
+    Cât este limita $\lim_{x \to 2} (2x + 1)$ ?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="1">
+    Cât este $\lim_{x \to 0} \frac{\sin x}{x}$ ?
+  </Intrebare>
+  <Intrebare id="q3" tip="input" raspunsCorect="0" explicatie="x^2 pentru x tinzand la 0 este 0">
+    Cât este $\lim_{x \to 0} x^2$ ?
+  </Intrebare>
+  <Intrebare id="q4" tip="grila" raspunsCorect="e" optiuni={[{eticheta: "e", valoare: "e"}, {eticheta: "1", valoare: "1"}, {eticheta: "0", valoare: "0"}]}>
+    Către ce tinde $(1 + 1/x)^x$ la infinit?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="2" explicatie="Regula lui L'Hopital sau limite remarcabile: sin(2x)/x = 2 * sin(2x)/(2x) -> 2 * 1 = 2">
+    Cât este $\lim_{x \to 0} \frac{\sin 2x}{x}$ ?
+  </Intrebare>
+</GrilaTest>

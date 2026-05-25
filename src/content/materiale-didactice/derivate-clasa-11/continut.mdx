@@ -1,0 +1,39 @@
+## Definiția derivatei
+
+Derivata unei funcții într-un punct măsoară rata instantanee de variație a funcției în acel punct (sau panta tangentei la grafic).
+
+$$
+f'(x_0) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}
+$$
+
+## Tabel cu derivate uzuale
+- $(x^n)' = n \cdot x^{n-1}$
+- $(e^x)' = e^x$
+- $(\ln x)' = \frac{1}{x}$
+- $(\sin x)' = \cos x$
+
+<Rezolvare>
+  **Exercițiu:**
+  Pentru funcția $f(x) = 3x^2 + 5x - 2$, derivata este:
+  $f'(x) = 3 \cdot 2x + 5 = 6x + 5$.
+</Rezolvare>
+
+---
+
+<GrilaTest titlu="Test: Derivare" descriere="Calculează derivata.">
+  <Intrebare id="q1" tip="input" raspunsCorect="6">
+    Dacă $f(x) = x^2$, cât este $f'(3)$ (valoarea derivatei în punctul $x=3$)?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="3x^2">
+    Cât este derivata funcției $f(x) = x^3$ ? (Scrie sub forma 3x^2)
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="cos x" optiuni={[{eticheta: "sin x", valoare: "sin x"}, {eticheta: "-sin x", valoare: "-sin x"}, {eticheta: "cos x", valoare: "cos x"}]}>
+    Cât este derivata funcției $\sin x$?
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="e^x">
+    Cât este derivata funcției $e^x$ ?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="0" explicatie="Derivata oricărei constante este zero.">
+    Cât este derivata numărului constant 10 ?
+  </Intrebare>
+</GrilaTest>

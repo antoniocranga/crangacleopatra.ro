@@ -1,0 +1,36 @@
+## Ce este un sistem?
+
+Un sistem de două ecuații cu două necunoscute necesită găsirea unei perechi $(x, y)$ care verifică ambele ecuații.
+
+$$
+\begin{cases} 
+x + y = 10 \\
+x - y = 4 
+\end{cases}
+$$
+
+## Metoda Reducerii
+Adunăm cele două ecuații:
+$(x + y) + (x - y) = 10 + 4 \implies 2x = 14 \implies x = 7$
+Apoi înlocuim în prima:
+$7 + y = 10 \implies y = 3$
+
+---
+
+<GrilaTest titlu="Test: Sisteme" descriere="Rezolvă mental.">
+  <Intrebare id="q1" tip="input" raspunsCorect="7">
+    Care este valoarea lui $x$ din exemplul de mai sus?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="3">
+    Care este valoarea lui $y$ din exemplul de mai sus?
+  </Intrebare>
+  <Intrebare id="q3" tip="input" raspunsCorect="5" explicatie="x+x = 10 => 2x=10 => x=5">
+    Rezolvă $x+y=10$ și $x-y=0$. Cât este $x$?
+  </Intrebare>
+  <Intrebare id="q4" tip="grila" raspunsCorect="Metoda Reducerii" optiuni={[{eticheta: "Metoda Substiției", valoare: "Metoda Substiției"}, {eticheta: "Metoda Reducerii", valoare: "Metoda Reducerii"}]}>
+    Ce metodă am folosit în exemplu adunând cele două ecuații?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="6" explicatie="Dacă $x=2$ și $x+y=8$, $y=6$.">
+    Dacă într-un sistem aflăm $x=2$, iar prima ecuație este $x+y=8$, cât este $y$?
+  </Intrebare>
+</GrilaTest>

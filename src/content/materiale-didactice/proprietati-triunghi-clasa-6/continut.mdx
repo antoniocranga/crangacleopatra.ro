@@ -1,0 +1,35 @@
+## Unghiurile Triunghiului
+
+Suma măsurilor unghiurilor interne ale oricărui triunghi este de $180^\circ$.
+$$
+\angle A + \angle B + \angle C = 180^\circ
+$$
+
+## Clasificarea triunghiurilor
+- **Echilateral:** Toate laturile sunt egale, iar fiecare unghi are $60^\circ$.
+- **Isoscel:** Are două laturi egale și două unghiuri egale.
+- **Dreptunghic:** Are un unghi de $90^\circ$.
+
+<Atenție titlu="Inegalitatea Triunghiului">
+  Într-un triunghi, suma lungimilor oricăror două laturi este mereu mai mare decât lungimea celei de-a treia laturi.
+</Atenție>
+
+---
+
+<GrilaTest titlu="Test: Geometrie" descriere="Unghiuri.">
+  <Intrebare id="q1" tip="input" raspunsCorect="60">
+    Dacă într-un triunghi două unghiuri au $50^\circ$ și respectiv $70^\circ$, câte grade are al treilea unghi? (scrie doar numărul)
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="180">
+    Câte grade are suma unghiurilor oricărui triunghi?
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="Echilateral" optiuni={[{eticheta: "Isoscel", valoare: "Isoscel"}, {eticheta: "Echilateral", valoare: "Echilateral"}]}>
+    Care triunghi are toate cele trei laturi egale?
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="90">
+    Câte grade are unghiul drept dintr-un triunghi dreptunghic?
+  </Intrebare>
+  <Intrebare id="q5" tip="grila" raspunsCorect="Nu" optiuni={[{eticheta: "Da", valoare: "Da"}, {eticheta: "Nu", valoare: "Nu"}]}>
+    Poate un triunghi să aibă laturile 2, 2 și 5? (Gândește-te la inegalitatea triunghiului)
+  </Intrebare>
+</GrilaTest>

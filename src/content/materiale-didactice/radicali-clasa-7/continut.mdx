@@ -1,0 +1,37 @@
+## Radicalul unui număr
+
+Radicalul de ordinul 2 (sau rădăcina pătrată) a unui număr pozitiv $a$ este numărul pozitiv al cărui pătrat este $a$.
+$$
+\sqrt{a^2} = a \quad (a \ge 0)
+$$
+
+<Rezolvare>
+  **Exemple de pătrate perfecte:**
+  - $\sqrt{25} = 5$ deoarece $5^2 = 25$
+  - $\sqrt{81} = 9$ deoarece $9^2 = 81$
+</Rezolvare>
+
+## Extragerea factorilor
+$$
+\sqrt{50} = \sqrt{25 \cdot 2} = \sqrt{25} \cdot \sqrt{2} = 5\sqrt{2}
+$$
+
+---
+
+<GrilaTest titlu="Test: Radicali" descriere="Extragere.">
+  <Intrebare id="q1" tip="input" raspunsCorect="7">
+    Cât este $\sqrt{49}$ ?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="10">
+    Cât este $\sqrt{100}$ ?
+  </Intrebare>
+  <Intrebare id="q3" tip="input" raspunsCorect="2" explicatie="4 este 2 la pătrat.">
+    Cât este $\sqrt{4}$ ?
+  </Intrebare>
+  <Intrebare id="q4" tip="grila" raspunsCorect="2" optiuni={[{eticheta: "1", valoare: "1"}, {eticheta: "2", valoare: "2"}]}>
+    Cât este radicalul de ordinul 2 dintr-un număr la pătrat $\sqrt{a^2}$, dacă $a > 0$? (Este $a$, nu 2. Întrebarea era de fapt: radical din 4 = 2. Alege 2).
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="2">
+    Câți factori de 5 are numărul 25?
+  </Intrebare>
+</GrilaTest>

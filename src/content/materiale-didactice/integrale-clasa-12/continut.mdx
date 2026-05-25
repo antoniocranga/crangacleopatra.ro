@@ -1,0 +1,68 @@
+## Primitivele unei funcții (Integrala nedefinită)
+
+Fie funcția $f : I \rightarrow \mathbb\{R\}$, unde $I$ este un interval.
+Se numește **primitivă** a funcției $f$ o funcție $F : I \rightarrow \mathbb\{R\}$, derivabilă pe $I$, cu proprietatea:
+
+$$
+F'(x) = f(x), \quad \forall x \in I
+$$
+
+Mulțimea tuturor primitivelor funcției $f$ se numește **integrala nedefinită** a funcției $f$ și se notează:
+$$
+\int f(x) \, dx = F(x) + \mathcal\{C\}
+$$
+
+## Proprietăți ale primitivelor
+
+1. **Liniaritatea integralei:**
+   $$ \int [a \cdot f(x) + b \cdot g(x)] \, dx = a \int f(x) \, dx + b \int g(x) \, dx $$
+2. **Formula integrării prin părți:**
+   $$ \int f(x)g'(x) \, dx = f(x)g(x) - \int f'(x)g(x) \, dx $$
+
+## Integrala Definită (Formula Leibniz-Newton)
+
+Dacă $f : [a, b] \rightarrow \mathbb\{R\}$ este continuă și $F$ este o primitivă a sa, atunci integrala definită a lui $f$ de la $a$ la $b$ este:
+
+$$
+\int_\{a\}^\{b\} f(x) \, dx = F(x) \Big|_\{a\}^\{b\} = F(b) - F(a)
+$$
+
+<Rezolvare>
+  **Exercițiu rezolvat:**
+  Calculați integrala:
+  $$ \int_\{1\}^\{2\} 3x^2 \, dx $$
+
+  1. Găsim o primitivă pentru $f(x) = 3x^2$: $F(x) = x^3$.
+  2. Aplicăm formula Leibniz-Newton:
+  $$ \int_\{1\}^\{2\} 3x^2 \, dx = x^3 \Big|_\{1\}^\{2\} = 2^3 - 1^3 = 8 - 1 = 7. $$
+</Rezolvare>
+
+<Atenție titlu="Important">
+  Orice funcție continuă admite primitive, dar nu orice funcție continuă are primitive exprimabile prin funcții elementare (de exemplu $e^\{-x^2\}$).
+</Atenție>
+
+---
+
+## Verificarea Cunoștințelor
+
+<GrilaTest titlu="Test: Calcul Integral" descriere="Exerciții pentru evaluarea cunoștințelor din Analiza Matematică.">
+  <Intrebare
+    id="q1"
+    tip="grila"
+    raspunsCorect="e^x + C"
+    explicatie="Derivata lui e^x este e^x, prin urmare integrala (primitiva) este e^x + constanta."
+    optiuni={[
+      { eticheta: "e^x + C", valoare: "e^x + C" },
+      { eticheta: "x * e^(x-1) + C", valoare: "x * e^(x-1) + C" },
+      { eticheta: "ln(x) + C", valoare: "ln(x) + C" }
+    ]}>
+    Integrala din e^x dx este:
+  </Intrebare>
+  <Intrebare
+    id="q2"
+    tip="input"
+    raspunsCorect="1"
+    explicatie="Primitiva este x^2. Deci 1^2 - 0^2 = 1.">
+    Calculează valoarea integralei de la 0 la 1 din 2x dx. (scrie doar numărul final)
+  </Intrebare>
+</GrilaTest>

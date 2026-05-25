@@ -1,0 +1,68 @@
+## Definiția funcției de gradul al doilea
+
+O funcție $f : \mathbb\{R\} \rightarrow \mathbb\{R\}$, definită prin:
+$$
+f(x) = ax^2 + bx + c
+$$
+unde $a, b, c \in \mathbb\{R\}$ și $a \neq 0$, se numește funcție de gradul al doilea.
+
+- $a, b, c$ se numesc coeficienții funcției.
+- Forma graficului este o parabolă.
+
+<Atenție titlu="Condiția de existență">
+  Dacă $a = 0$, funcția devine $f(x) = bx + c$, adică o funcție de gradul I. Prin urmare, condiția $a \neq 0$ este esențială.
+</Atenție>
+
+## Graficul funcției (Parabola)
+
+Punctul remarcabil al parabolei este **Vârful (V)**.
+Coordonatele vârfului parabolei sunt $V(x_v, y_v)$, unde:
+
+$$
+x_v = -\frac\{b\}\{2a\}, \quad y_v = -\frac\{\Delta\}\{4a\}
+$$
+(unde $\Delta = b^2 - 4ac$)
+
+### Axa de simetrie
+Parabola are o axă de simetrie de ecuație $x = -\frac\{b\}\{2a\}$.
+
+### Orientarea parabolei
+1. Dacă $a > 0$: parabola își ține "brațele" orientate în sus (V este punct de minim).
+2. Dacă $a < 0$: parabola își ține "brațele" orientate în jos (V este punct de maxim).
+
+<Rezolvare>
+  **Exemplu:**
+  Fie funcția $f(x) = x^2 - 4x + 3$. Determinați vârful parabolei.
+
+  - Coeficienți: $a = 1, b = -4, c = 3$.
+  - Calculăm $\Delta = (-4)^2 - 4 \cdot 1 \cdot 3 = 16 - 12 = 4$.
+  - Abscisa vârfului: $x_v = -\frac\{-4\}\{2 \cdot 1\} = 2$.
+  - Ordonata vârfului: $y_v = -\frac\{4\}\{4 \cdot 1\} = -1$.
+  - Deci, vârful este $V(2, -1)$.
+</Rezolvare>
+
+---
+
+## Verificarea Cunoștințelor
+
+<GrilaTest titlu="Test: Funcția de gradul II" descriere="Exerciții pentru evaluarea cunoștințelor din Algebra clasei a IX-a.">
+  <Intrebare
+    id="q1"
+    tip="grila"
+    raspunsCorect="În jos, cu punct de maxim"
+    explicatie="Deoarece a = -2 < 0, parabola este orientată cu brațele în jos și vârful este punct de maxim."
+    optiuni={[
+      { eticheta: "În jos, cu punct de maxim", valoare: "În jos, cu punct de maxim" },
+      { eticheta: "În sus, cu punct de minim", valoare: "În sus, cu punct de minim" },
+      { eticheta: "Spre stânga", valoare: "Spre stânga" }
+    ]}>
+    Pentru funcția f(x) = -2x^2 + 3x - 1, parabola este orientată:
+  </Intrebare>
+  <Intrebare
+    id="q2"
+    tip="input"
+    raspunsCorect="1"
+    explicatie="Δ = (-5)^2 - 4*1*6 = 25 - 24 = 1.">
+    Calculează discriminantul Δ (Delta) pentru f(x) = x^2 - 5x + 6. (scrie doar numărul)
+  </Intrebare>
+</GrilaTest>

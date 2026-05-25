@@ -1,0 +1,37 @@
+## Introducere
+
+Un vector $\vec{v}$ are trei elemente caracteristice:
+- **Direcție**
+- **Sens**
+- **Modul** (lungime), notat $|\vec{v}|$
+
+## Adunarea vectorilor
+
+**Regula triunghiului:** Dacă așezăm originea celui de-al doilea vector în vârful primului, suma lor este vectorul care închide triunghiul.
+$$
+\vec{AB} + \vec{BC} = \vec{AC}
+$$
+
+<Atenție titlu="Atenție">
+  Suma lungimilor $|\vec{AB}| + |\vec{BC}|$ este în general MAI MARE decât $|\vec{AC}|$ (inegalitatea triunghiului), egalitatea având loc doar dacă punctele sunt coliniare.
+</Atenție>
+
+---
+
+<GrilaTest titlu="Test: Vectori" descriere="Calcul cu vectori.">
+  <Intrebare id="q1" tip="grila" raspunsCorect="AC" optiuni={[{eticheta: "AC", valoare: "AC"}, {eticheta: "BA", valoare: "BA"}]}>
+    Ce rezultă din adunarea vectorilor $\vec{AB} + \vec{BC}$ ? (Scrie fără săgeată)
+  </Intrebare>
+  <Intrebare id="q2" tip="grila" raspunsCorect="3" optiuni={[{eticheta: "2", valoare: "2"}, {eticheta: "3", valoare: "3"}]}>
+    Câte caracteristici principale are un vector?
+  </Intrebare>
+  <Intrebare id="q3" tip="grila" raspunsCorect="0" optiuni={[{eticheta: "0", valoare: "0"}, {eticheta: "1", valoare: "1"}]}>
+    Ce rezultă din $\vec{AB} + \vec{BA}$ ? (Vectorul nul are lungimea...)
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="5" explicatie="Pitagora: sqrt(3^2 + 4^2) = 5">
+    Dacă vectorii $\vec{u}$ și $\vec{v}$ sunt perpendiculari, $|u|=3$, $|v|=4$, cât este $|\vec{u} + \vec{v}|$ ?
+  </Intrebare>
+  <Intrebare id="q5" tip="grila" raspunsCorect="Regula paralelogramului" optiuni={[{eticheta: "Regula paralelogramului", valoare: "Regula paralelogramului"}, {eticheta: "Regula pătratului", valoare: "Regula pătratului"}]}>
+    Ce altă regulă de adunare a vectorilor mai cunoști în afară de regula triunghiului?
+  </Intrebare>
+</GrilaTest>

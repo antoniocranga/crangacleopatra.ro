@@ -1,0 +1,39 @@
+## Definiția Logaritmului
+
+Logaritmul în baza $a$ din numărul pozitiv $b$ este exponentul la care trebuie ridicată baza $a$ pentru a obține $b$.
+$$
+\log_a b = x \iff a^x = b
+$$
+Condiții de existență: $a > 0$, $a \neq 1$, $b > 0$.
+
+## Proprietăți fundamentale
+1. $\log_a (x \cdot y) = \log_a x + \log_a y$
+2. $\log_a \left(\frac{x}{y}\right) = \log_a x - \log_a y$
+3. $\log_a (x^n) = n \cdot \log_a x$
+
+<Rezolvare>
+  **Exemplu:**
+  Să calculăm $\log_2 8 + \log_2 4$.
+  Putem folosi proprietatea 1:
+  $\log_2 (8 \cdot 4) = \log_2 32 = 5$.
+</Rezolvare>
+
+---
+
+<GrilaTest titlu="Test: Logaritmi" descriere="Verificare.">
+  <Intrebare id="q1" tip="input" raspunsCorect="3">
+    Cât este $\log_2 8$ ?
+  </Intrebare>
+  <Intrebare id="q2" tip="input" raspunsCorect="2" explicatie="10^2 = 100">
+    Cât este $\log_{10} 100$ ?
+  </Intrebare>
+  <Intrebare id="q3" tip="input" raspunsCorect="1" explicatie="a^1 = a">
+    Cât este $\log_5 5$ ?
+  </Intrebare>
+  <Intrebare id="q4" tip="input" raspunsCorect="0" explicatie="a^0 = 1">
+    Cât este $\log_7 1$ ?
+  </Intrebare>
+  <Intrebare id="q5" tip="grila" raspunsCorect="Se adună" optiuni={[{eticheta: "Se înmulțesc", valoare: "Se înmulțesc"}, {eticheta: "Se adună", valoare: "Se adună"}]}>
+    Ce se întâmplă cu logaritmii a două numere când acele numere se înmulțesc? (proprietatea 1)
+  </Intrebare>
+</GrilaTest>

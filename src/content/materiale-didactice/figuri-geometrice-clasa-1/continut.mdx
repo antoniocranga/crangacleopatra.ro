@@ -1,0 +1,31 @@
+## Figurile Geometrice
+
+În jurul nostru există multe obiecte care au forme matematice. Cele mai întâlnite figuri sunt:
+- **Pătratul:** Are 4 laturi egale.
+- **Dreptunghiul:** Are 4 laturi, cele opuse fiind egale.
+- **Triunghiul:** Are 3 laturi.
+- **Cercul:** Este rotund, fără colțuri.
+
+<Atenție titlu="Laturi și Vârfuri">
+  Pătratul și dreptunghiul au câte 4 vârfuri, iar triunghiul are doar 3! Cercul nu are niciun vârf.
+</Atenție>
+
+---
+
+<GrilaTest titlu="Test Geometrie" descriere="Recunoaște figurile geometrice.">
+  <Intrebare id="q1" tip="grila" raspunsCorect="Triunghiul" optiuni={[{eticheta: "Pătratul", valoare: "Pătratul"}, {eticheta: "Triunghiul", valoare: "Triunghiul"}, {eticheta: "Cercul", valoare: "Cercul"}]}>
+    Care figură are exact 3 laturi?
+  </Intrebare>
+  <Intrebare id="q2" tip="grila" raspunsCorect="Cercul" optiuni={[{eticheta: "Pătratul", valoare: "Pătratul"}, {eticheta: "Cercul", valoare: "Cercul"}, {eticheta: "Dreptunghiul", valoare: "Dreptunghiul"}]}>
+    Care figură nu are niciun colț?
+  </Intrebare>
+  <Intrebare id="q3" tip="input" raspunsCorect="4" explicatie="Dreptunghiul are 4 laturi.">
+    Câte laturi are un dreptunghi? (scrie numărul)
+  </Intrebare>
+  <Intrebare id="q4" tip="grila" raspunsCorect="Pătratul" optiuni={[{eticheta: "Pătratul", valoare: "Pătratul"}, {eticheta: "Dreptunghiul", valoare: "Dreptunghiul"}]}>
+    Care figură are toate cele 4 laturi egale?
+  </Intrebare>
+  <Intrebare id="q5" tip="input" raspunsCorect="3" explicatie="Un triunghi are 3 vârfuri.">
+    Câte vârfuri are un triunghi?
+  </Intrebare>
+</GrilaTest>
