@@ -7,9 +7,16 @@ import { PrintButton } from "@/components/materials/print-button"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Link } from "@/lib/navigation"
-import { getMaterialBySlug, getRelatedMaterials } from "@/lib/content"
+import { getMaterialBySlug, getRelatedMaterials, getAllMaterials } from "@/lib/content"
 import { getLevelByGrade, getSectionByGroup, materialTypeLabels } from "@/lib/education"
 import { renderMdx } from "@/lib/mdx"
+
+export async function generateStaticParams() {
+  const materials = await getAllMaterials()
+  return materials.map((material) => ({
+    slug: material.slug,
+  }))
+}
 
 export default async function MaterialPage({
   params,
