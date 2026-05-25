@@ -2,9 +2,10 @@ import * as React from "react"
 
 const messages = {
   metadata: {
-    siteTitle: "Profesor Crangă Cleopatra",
+    siteTitle: "Profesor Crangă Cleopatra | Educație, Matematică Interactivă",
     siteDescription:
       "Platforma educațională modernă pentru lecții, teste și provocări matematice.",
+    keywords: ["matematică", "lecții online", "exerciții rezolvate", "evaluare națională", "bacalaureat", "crangă cleopatra", "meditații matematică", "teste interactive"],
   },
   nav: {
     home: "Acasă",
