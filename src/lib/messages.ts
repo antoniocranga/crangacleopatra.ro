@@ -15,6 +15,7 @@ const messages = {
     about: "Despre mine",
     dailyChallenge: "Provocarea zilei",
     materials: "Materiale didactice",
+    resources: "Resurse",
     theory: "Teorie",
     exercises: "Exerciții",
     tests: "Teste",
@@ -62,6 +63,12 @@ const messages = {
     relatedTitle: "Alte materiale din același nivel",
     emptyTitle: "Nu există materiale disponibile",
     emptyDescription: "Revino curând pentru lecții și exerciții noi.",
+  },
+  resources: {
+    title: "Resurse educaționale",
+    description: "Documente și materiale utile pentru elevi și profesori.",
+    emptyTitle: "Nu există resurse",
+    emptyDescription: "Nu au fost încărcate resurse în acest moment.",
   },
   challenge: {
     inputLabel: "Răspunsul tău",

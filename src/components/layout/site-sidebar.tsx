@@ -22,6 +22,7 @@ const SiteSidebar = () => {
         <div className="space-y-1">
           {[
             { href: "/", label: t("nav.home") },
+            { href: "/resurse", label: t("nav.resources") },
           ].map((item) => (
             <Link
               key={item.href}
